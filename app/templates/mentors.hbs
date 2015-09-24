@@ -1,8 +1,15 @@
 {{outlet}}
 
-<h6>list of mentors</h6>
-<ul>
-{{#each model as |mentor|}}
-  {{mentor-tile mentor=mentor}}
-{{/each}}
-</ul>
+<center>
+<h2>Meet our mentors!</h2>
+<br>
+</center>
+
+
+<div class="row">
+    {{#each model as |mentor|}}
+    <div class="col-md-4">
+      {{mentor-tile mentor=mentor}}
+    </div>
+  {{/each}}
+</div>
